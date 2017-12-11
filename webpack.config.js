@@ -11,7 +11,7 @@ config.entry = './index.js';
 // output
 config.output = {
 	library: "ReactFocusTrap",
-	libraryTarget: 'umd'
+	libraryTarget: 'umd',
 };
 
 // define externals
@@ -20,31 +20,31 @@ config.externals = {
 		root: 'React',
 		commonjs2: 'react',
 		commonjs: 'react',
-		amd: 'react'
+		amd: 'react',
 	},
 	propTypes: {
-		root: 'PropTypes'
-	}
+		root: 'PropTypes',
+	},
 };
 
 // define module and plugins
-config.module = {rules: []};
+config.module = { rules: [] };
 config.plugins = [];
 
 // eslint configuration
 config.module.rules.push({
-    test: /\.js$/,
-    enforce: 'pre',
-    exclude: /node_modules/,
-    use: [
-        {
-            loader: 'eslint-loader',
-            options: {
-                failOnWarning: false,
-                failOnError: true
-            }
-        }
-    ]
+	test: /\.js$/,
+	enforce: 'pre',
+	exclude: /node_modules/,
+	use: [
+		{
+			loader: 'eslint-loader',
+			options: {
+				failOnWarning: false,
+				failOnError: true,
+			},
+		},
+	],
 });
 
 // babel loader rule
@@ -56,19 +56,19 @@ config.module.rules.push({
 		options: {
 			cacheDirectory: true,
 			presets: [
-				['env', {targets: {browsers: ["last 2 versions", "safari >= 7"]}}],
-				['react']
-			]
-		}
-	}
+				['env', { targets: { browsers: ['last 2 versions', 'safari >= 7'] } }],
+				['react'],
+			],
+		},
+	},
 });
 
 // no emit plugin
 config.plugins.push(new webpack.NoEmitOnErrorsPlugin());
 
 // uglify plugin
-if ('production' === process.env.NODE_ENV) {
-	config.plugins.push(new webpack.optimize.UglifyJsPlugin({sourceMap: true}));
+if (process.env.NODE_ENV === 'production') {
+	config.plugins.push(new webpack.optimize.UglifyJsPlugin({ sourceMap: true }));
 }
 
 module.exports = config;
