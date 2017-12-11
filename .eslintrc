@@ -7,5 +7,8 @@
 		"class-methods-use-this": 0,
 		"indent": [2, "tab"],
 		"react/jsx-filename-extension": 0
+	},
+	"globals": {
+		"document": true
 	}
 }
