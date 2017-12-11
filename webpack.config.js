@@ -10,7 +10,7 @@ config.entry = './index.js';
 
 // output
 config.output = {
-	library: "ReactFocusTrap",
+	library: 'ReactFocusTrap',
 	libraryTarget: 'umd',
 };
 
