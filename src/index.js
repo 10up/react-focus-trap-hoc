@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const trapHOC = (options = {}) => (WrappedComponent) => {
-  const args = Object.assign({ trapIsActive: false }, options);
+	const args = Object.assign({ trapIsActive: false }, options);
 
 	class FocusTrap extends Component {
 		constructor() {
