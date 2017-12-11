@@ -1,0 +1,6 @@
+/nbproject/
+/node_modules/
+/lib/
+/dist/
+/npm-debug.log
+/package-lock.json
