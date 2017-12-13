@@ -1,17 +1,17 @@
 # react-focus-trap-hoc 1.0.0
 
-React focus trap is a [higher order component](https://reactjs.org/docs/higher-order-components.html) intended to be used on compoennts within a React application that may require focus to be driven to it, and then trapped within it until another action is taken by the user. A prime example of this would be a modal. From an accessibility standpoint, a user navigating a site with the keyboard may activate a modal, focus can be driven to the modal, and then remain inside the modal so the user can navigate through the content without focus being lost outside the modal.
+React focus trap is a [higher order component](https://reactjs.org/docs/higher-order-components.html) intended to be used on components within a React application that may require focus to be driven to it, and then trapped within it until another action is taken by the user. A prime example of this would be a modal. From an accessibility standpoint, a user navigating a site with the keyboard may activate a modal, focus can be driven to the modal, and then remain inside the modal so the user can navigate through the content without focus being lost outside the modal.
 
 ## Instalation
 
 **NPM**
 ```
-npm install react-focus-trap-hoc --save
+npm install @10up/react-focus-trap-hoc --save
 ```
 
 **Yarn**
 ```
-yarn add react-focus-trap-hoc
+yarn add @10up/react-focus-trap-hoc --save
 ```
 
 ## Usage
@@ -83,7 +83,7 @@ To ensure that focus is retained within your component, simply add the following
   }
 
 - export default Modal;
-+ export default trapHoc(Modal);
++ export default trapHoc()(Modal);
 ```
 
 ## Documentation
