@@ -14,23 +14,6 @@ npm install react-focus-trap-hoc --save
 yarn add react-focus-trap-hoc
 ```
 
-## Documentation
-
-### trapHoc(options={ trapIsActive: false })(YourWrappedComponent);
-React focus trap HOC allows you to pass options to the HOC itself. By default `trapIsActive` is set to false. This option dictates whether or not focus should be trapped initially. This would need to be set `true` for instance, when using react focus trap HOC with a stateless functional component.
-
-React focus trap HOC also passes two functions to your wrapped component as props:
-
-### activateTrap()
-
-`activateTrap()` changes the state on the HOC, telling it that the trap is active.
-
-### deactivateTrap()
-
-`deactivateTrap()` changes the state on the HOC, telling it that the trap is inactive.
-
-`activateTrap()` and `deactivateTrap()` must be triggered on your component when state is changed on your wrapped component.
-
 ## Usage
 
 Let's use the following file as an example:
@@ -102,3 +85,20 @@ To ensure that focus is retained within your component, simply add the following
 - export default Modal;
 + export default trapHoc(Modal);
 ```
+
+## Documentation
+
+### trapHoc(options={ trapIsActive: false })(YourWrappedComponent);
+React focus trap HOC allows you to pass options to the HOC itself. By default `trapIsActive` is set to false. This option dictates whether or not focus should be trapped initially. This would need to be set `true` for instance, when using react focus trap HOC with a stateless functional component.
+
+React focus trap HOC also passes two functions to your wrapped component as props:
+
+### activateTrap()
+
+`activateTrap()` changes the state on the HOC, telling it that the trap is active.
+
+### deactivateTrap()
+
+`deactivateTrap()` changes the state on the HOC, telling it that the trap is inactive.
+
+`activateTrap()` and `deactivateTrap()` must be triggered on your component when state is changed on your wrapped component.
