@@ -19,7 +19,7 @@ yarn add @10up/react-focus-trap-hoc --save
 Let's use the following file as an example:
 
 ```javascript
-  // Modal.js
+  // Modal.jsgs
   import React, { Component } from 'react';
 
   class Modal extends Component {
@@ -102,3 +102,11 @@ React focus trap HOC also passes two functions to your wrapped component as prop
 `deactivateTrap()` changes the state on the HOC, telling it that the trap is inactive.
 
 `activateTrap()` and `deactivateTrap()` must be triggered on your component when state is changed on your wrapped component.
+
+## Contribute
+
+What to help or have a suggestion? Open a [new ticket](https://github.com/10up/react-focus-trap-hoc/issues/new) and we can discuss it or submit pull request. Thanks for your interest!
+
+## License
+
+MIT
