@@ -28,6 +28,7 @@
 		"type": "git",
 		"url": "git@github.com:10up/react-focus-trap-hoc.git"
 	},
+	"readmeFilename": "README.md",
 	"scripts": {
 		"build": "npm run build:commonjs & npm run build:umd & npm run build:umd:min",
 		"build:commonjs": "mkdir -p lib && babel ./src -d lib",
