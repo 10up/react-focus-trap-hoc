@@ -7,8 +7,8 @@
 	"bugs": {
 		"url": "https://github.com/10up/react-focus-trap-hoc/issues"
 	},
-	"version": "0.4.0",
-	"main": "lib/index",
+	"version": "1.0.0",
+	"main": "index",
 	"files": [
 		"*.md",
 		"dist",
