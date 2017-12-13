@@ -4,10 +4,12 @@ React focus trap is a [higher order component](https://reactjs.org/docs/higher-o
 
 ## Instalation
 
+**NPM**
 ```
 npm install react-focus-trap-hoc --save
 ```
 
+**Yarn**
 ```
 yarn add react-focus-trap-hoc
 ```
@@ -51,7 +53,7 @@ Let's use the following file as an example:
     render() {
       return(
         <div id="modal">
-          <p>Super fancy content with <a href="#"></a>focusable elements</a> within the modal!</p>
+          <p>Super fancy content with <a href="#">focusable elements</a> within the modal!</p>
           <button>Just a button here</button>
         </div>
       );
