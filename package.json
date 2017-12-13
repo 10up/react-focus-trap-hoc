@@ -1,5 +1,5 @@
 {
-	"name": "react-focus-trap-hoc",
+	"name": "@10up/react-focus-trap-hoc",
 	"description": "Higher order component used to trap keyboard focus within a wrapped component.",
 	"license": "MIT",
 	"author": "Dominic Magnifico <dominicmagnifico@gmail.com>",

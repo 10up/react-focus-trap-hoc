@@ -1,1 +1,1 @@
-# react-focus-trap-hoc
+# @10up/react-focus-trap-hoc
