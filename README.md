@@ -1,4 +1,4 @@
-# react-focus-trap-hoc 1.0.0
+# react-focus-trap-hoc 1.0.1
 
 React focus trap is a [higher order component](https://reactjs.org/docs/higher-order-components.html) intended to be used on components within a React application that may require focus to be driven to it, and then trapped within it until another action is taken by the user. A prime example of this would be a modal. From an accessibility standpoint, a user navigating a site with the keyboard may activate a modal, focus can be driven to the modal, and then remain inside the modal so the user can navigate through the content without focus being lost outside the modal.
 
