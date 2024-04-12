@@ -1,6 +1,15 @@
-# react-focus-trap-hoc 1.0.1
+# React Focus Trap Hoc
 
-React focus trap is a [higher order component](https://reactjs.org/docs/higher-order-components.html) intended to be used on components within a React application that may require focus to be driven to it, and then trapped within it until another action is taken by the user. A prime example of this would be a modal. From an accessibility standpoint, a user navigating a site with the keyboard may activate a modal, focus can be driven to the modal, and then remain inside the modal so the user can navigate through the content without focus being lost outside the modal.
+> React focus trap is a [higher order component](https://reactjs.org/docs/higher-order-components.html) intended to be used on components within a React application that may require focus to be driven to it, and then trapped within it until another action is taken by the user.
+
+[![Support Level](https://img.shields.io/badge/support-archived-red.svg)](#support-level) [![MIT License](https://img.shields.io/github/license/10up/react-focus-trap-hoc.svg)](https://github.com/10up/react-focus-trap-hoc/blob/master/LICENSE)
+
+> [!CAUTION]
+> As of 12 April 2024, this project is archived and no longer being actively maintained.
+
+## Overview
+
+A prime example of this would be a modal. From an accessibility standpoint, a user navigating a site with the keyboard may activate a modal, focus can be driven to the modal, and then remain inside the modal so the user can navigate through the content without focus being lost outside the modal.
 
 ## Instalation
 
@@ -107,9 +116,9 @@ React focus trap HOC also passes two functions to your wrapped component as prop
 
 What to help or have a suggestion? Open a [new ticket](https://github.com/10up/react-focus-trap-hoc/issues/new) and we can discuss it or submit pull request. Thanks for your interest!
 
-## License
+## Support Level
 
-MIT
+**Archived:** This project is no longer maintained by 10up. We are no longer responding to Issues or Pull Requests unless they relate to security concerns. We encourage interested developers to fork this project and make it their own!
 
 ## Like what you see?
 
